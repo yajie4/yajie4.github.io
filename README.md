@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
   <title>HELLO HUBBY</title> <!-- CUSTOMIZE TITLE -->
