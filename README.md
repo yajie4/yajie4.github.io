@@ -24,6 +24,7 @@
 
   <div>
     <h2>ENTER PASSWORD TO CONTINUE</h2>
+    <h6><i>Clue: The day I promised</i></h6>
     <input type="password" id="password" placeholder="ENTER PASSWORD"> <!-- CUSTOMIZE PLACEHOLDER -->
     <button onclick="checkPassword()">SUBMIT</button>
   </div>
@@ -31,7 +32,7 @@
   <script>
     function checkPassword() {
       const input = document.getElementById("password").value;
-      if (input === "YOURSECRET") { <!-- CUSTOMIZE PASSWORD -->
+      if (input === "070235") { <!-- CUSTOMIZE PASSWORD -->
         window.location.href = "MESSAGES.HTML"; <!-- CUSTOMIZE TARGET PAGE -->
       } else {
         alert("INCORRECT PASSWORD."); <!-- CUSTOMIZE ERROR MESSAGE -->
