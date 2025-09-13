@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome</title>
+  <title>HELLO HUBBY</title> <!-- CUSTOMIZE TITLE -->
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h2>Enter Password to Continue</h2>
-  <input type="password" id="password" placeholder="Enter password">
-  <button onclick="checkPassword()">Submit</button>
+  <video width="640" height="360" controls autoplay muted>
+    <source src="YOUR-VIDEO-FILE.mp4" type="video/mp4"> <!-- CUSTOMIZE VIDEO FILE -->
+    Your browser does not support the video tag.
+  </video>
+
+  <div>
+    <h2>ENTER PASSWORD TO CONTINUE</h2>
+    <input type="password" id="password" placeholder="ENTER PASSWORD"> <!-- CUSTOMIZE PLACEHOLDER -->
+    <button onclick="checkPassword()">SUBMIT</button>
+  </div>
 
   <script>
     function checkPassword() {
       const input = document.getElementById("password").value;
-      if (input === "yourSecret") {
-        window.location.href = "messages.html";
+      if (input === "YOURSECRET") { <!-- CUSTOMIZE PASSWORD -->
+        window.location.href = "MESSAGES.HTML"; <!-- CUSTOMIZE TARGET PAGE -->
       } else {
-        alert("Incorrect password.");
+        alert("INCORRECT PASSWORD."); <!-- CUSTOMIZE ERROR MESSAGE -->
       }
     }
   </script>
