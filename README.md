@@ -23,8 +23,8 @@
   </video>
 
   <div>
-    <h2>ENTER PASSWORD TO CONTINUE</h2>
-    <h6><i>Clue: The day I promised</i></h6>
+    <h2><p style="color: #00B03B;"> ENTER PASSWORD TO CONTINUE</p></h2>
+    <h6><i><p style="color: #32874E;">Clue: The day I promised</p></i></h6>
     <input type="password" id="password" placeholder="ENTER PASSWORD"> <!-- CUSTOMIZE PLACEHOLDER -->
     <button onclick="checkPassword()">SUBMIT</button>
   </div>
