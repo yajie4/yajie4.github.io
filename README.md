@@ -37,7 +37,7 @@
     function checkPassword() {
       const input = document.getElementById("password").value;
       if (input === "070235") { <!-- CUSTOMIZE PASSWORD -->
-        window.location.href = "MESSAGES.HTML"; <!-- CUSTOMIZE TARGET PAGE -->
+        window.location.href = "MESSAGES.html"; <!-- CUSTOMIZE TARGET PAGE -->
       } else {
         alert("INCORRECT PASSWORD."); <!-- CUSTOMIZE ERROR MESSAGE -->
       }
