@@ -18,7 +18,7 @@
 </head>
 <body>
   <video width="640" height="360" controls autoplay muted>
-    <source src="YOUR-VIDEO-FILE.mp4" type="video/mp4"> <!-- CUSTOMIZE VIDEO FILE -->
+    <source src="xyz.mp4" type="video/mp4"> <!-- CUSTOMIZE VIDEO FILE -->
     Your browser does not support the video tag.
   </video>
 
