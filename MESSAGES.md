@@ -3,7 +3,7 @@ layout: default
 title: Messages
 ---
 
-<h2>Choose a Number</h2>
+<h2 style="font-size: 42px; color: #00B03B; margin-bottom: 10px;">Choose a Number, Hubby 💚</h2>
 <p style="font-style: italic; color: #32874E;">“Some memories don’t speak—they wait to be touched.”</p>
 
 <div class="grid" id="button-grid"></div>
@@ -14,20 +14,22 @@ title: Messages
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 12px; /* Adds spacing between buttons */
+    gap: 12px;
     max-width: 900px;
     margin: auto;
   }
 
   .number-button {
-    font-size: 28px;              /* Bigger numbers */
+    font-size: 28px;
     margin: 10px;
-    padding: 20px 30px;           /* Larger clickable area */
+    padding: 20px 0;
+    width: 100px;
     border: none;
-    border-radius: 12px;          /* Softer, rounder corners */
+    border-radius: 12px;
     cursor: pointer;
     color: white;
     transition: transform 0.2s;
+    text-align: center;
   }
 
   .number-button:hover {
@@ -58,7 +60,7 @@ title: Messages
     const button = document.createElement("button");
     button.innerText = i;
     button.className = "number-button";
-    button.style.backgroundColor = `hsl(140, 50%, ${30 + i}%`; // Different green shades
+    button.style.backgroundColor = `hsl(140, 50%, ${30 + i}%`;
     button.onclick = () => {
       document.getElementById("message-box").innerText = messages[i] || "No message yet.";
     };
