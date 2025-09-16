@@ -36,13 +36,13 @@
 <script>
   function checkPassword() {
     const input = document.getElementById("password").value;
-    const correctPassword = "070235"; // Customize password
-    const targetPage = "/messages";   // Redirect to rendered Jekyll page
+    const correctPassword = "070235";
+    const targetPage = "/MESSAGES"; // Redirect to rendered Jekyll page
 
     if (input === correctPassword) {
       window.location.href = targetPage;
     } else {
-      alert("INCORRECT PASSWORD."); // Customize error message
+      alert("INCORRECT PASSWORD.");
     }
   }
 </script>
