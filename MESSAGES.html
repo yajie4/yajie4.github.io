@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Messages</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5fff5;
+      text-align: center;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .number-button {
+      font-size: 18px;
+      margin: 8px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: white;
+      transition: transform 0.2s;
+    }
+
+    .number-button:hover {
+      transform: scale(1.05);
+    }
+
+    #message-box {
+      margin-top: 30px;
+      font-style: italic;
+      color: #2E7D32;
+      min-height: 40px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Choose a Number</h2>
+  <div class="grid" id="button-grid"></div>
+  <div id="message-box"></div>
+
+  <script>
+    const messages = {
+      1: "Message for 1",
+      2: "Message for 2",
+      3: "Message for 3",
+      // ... add custom messages up to 41
+      41: "Message for 41"
+    };
+
+    const grid = document.getElementById("button-grid");
+
+    for (let i = 1; i <= 41; i++) {
+      const button = document.createElement("button");
+      button.innerText = i;
+      button.className = "number-button";
+      button.style.backgroundColor = `hsl(140, 50%, ${30 + i}%`; // Different green shades
+      button.onclick = () => {
+        document.getElementById("message-box").innerText = messages[i] || "No message yet.";
+      };
+      grid.appendChild(button);
+    }
+  </script>
+</body>
+</html>
