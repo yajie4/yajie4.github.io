@@ -33,15 +33,16 @@
     <button onclick="checkPassword()">SUBMIT</button>
   </div>
 
-  <script>
-    function checkPassword() {
-      const input = document.getElementById("password").value;
-      if (input === "070235") { <!-- CUSTOMIZE PASSWORD -->
-        window.location.href = "MESSAGES.md"; <!-- CUSTOMIZE TARGET PAGE -->
-      } else {
-        alert("INCORRECT PASSWORD."); <!-- CUSTOMIZE ERROR MESSAGE -->
-      }
+<script>
+  function checkPassword() {
+    const input = document.getElementById("password").value;
+    const correctPassword = "070235"; // Customize password
+    const targetPage = "/messages";   // Redirect to rendered Jekyll page
+
+    if (input === correctPassword) {
+      window.location.href = targetPage;
+    } else {
+      alert("INCORRECT PASSWORD."); // Customize error message
     }
-  </script>
-</body>
-</html>
+  }
+</script>
