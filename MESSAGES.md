@@ -4,7 +4,7 @@ title: Messages
 ---
 
 <h2 style="font-size: 42px; color: #00B03B; margin-bottom: 10px;">Choose a Number, Hubby 💚</h2>
-<p style="font-style: italic; color: #32874E;">“Some memories don’t speak—they wait to be touched.”</p>
+<p style="font-style: italic; color: #32874E;">“This is for you, my love so sweet! 41 simple messages! Click on any number then scroll down. Do this every 2 months starting this September.”</p>
 
 <div class="grid" id="button-grid"></div>
 <div id="message-box"></div>
@@ -39,9 +39,15 @@ title: Messages
 
   #message-box {
     margin-top: 30px;
+    font-size: 28px;
     font-style: italic;
+    font-weight: 500;
     color: #98D7A5;
-    min-height: 40px;
+    min-height: 60px;
+    padding: 20px;
+    line-height: 1.6;
+    opacity: 1;
+    transition: opacity 0.3s ease;
   }
 </style>
 
@@ -62,7 +68,12 @@ title: Messages
     button.className = "number-button";
     button.style.backgroundColor = `hsl(140, 50%, ${30 + i}%`;
     button.onclick = () => {
-      document.getElementById("message-box").innerText = messages[i] || "No message yet.";
+      const box = document.getElementById("message-box");
+      box.style.opacity = 0;
+      setTimeout(() => {
+        box.innerText = messages[i] || "No message yet.";
+        box.style.opacity = 1;
+      }, 150);
     };
     grid.appendChild(button);
   }
