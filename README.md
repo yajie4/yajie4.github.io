@@ -17,10 +17,7 @@
   </style>
 </head>
 <body>
-  <video width="640" height="360" controls autoplay muted>
-    <source src="xyz.mp4" type="video/mp4"> <!-- CUSTOMIZE VIDEO FILE -->
-    Your browser does not support the video tag.
-  </video>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/GUlq0b6Wi5M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   <div>
     <h2><p style="color: #00B03B;"> ENTER PASSWORD TO CONTINUE</p></h2>
